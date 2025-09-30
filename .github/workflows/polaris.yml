@@ -31,6 +31,8 @@ jobs:
         ### SCANNING OPTIONAL
         polaris_application_name: "Merganser Duck Hardware"
         polaris_project_name: "GitHub Bridge"
+        coverity_build_command: "./mvnw clean install -DskipTests"
+        coverity_clean_command: "./mvnw clean"
         
         ### SCANNING OPTIONAL: Pull Request comments
         #polaris_prComment_enabled: true
