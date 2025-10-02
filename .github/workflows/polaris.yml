@@ -33,6 +33,7 @@ jobs:
         polaris_project_name: "GitHub Bridge"
         coverity_build_command: "./mvnw clean install -DskipTests"
         coverity_clean_command: "./mvnw clean"
+        polaris_test_sca_type:	"SCA-PACKAGE,SCA-SIGNATURE"
         
         ### SCANNING OPTIONAL: Pull Request comments
         #polaris_prComment_enabled: true
