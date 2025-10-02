@@ -50,7 +50,7 @@ public class SqlInjectionChallenge implements AssignmentEndpoint {
 
     if (attackResult == null) {
 
-  try (Connection connection = dataSource.getConnection()) {
+      try (Connection connection = dataSource.getConnection()) {
         String checkUserQuery =
             "select userid from sql_challenge_users where userid = '" + username + "'";
         Statement statement = connection.createStatement();
@@ -70,6 +70,9 @@ public class SqlInjectionChallenge implements AssignmentEndpoint {
         }
       } catch (SQLException e) {
         attackResult = failed(this).output("Something went wrong").build();
+      }
+    }
+    return attackResult;
   }
 
   private AttackResult checkArguments(String username, String email, String password) {
