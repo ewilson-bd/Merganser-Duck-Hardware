@@ -30,7 +30,7 @@ jobs:
         
         ### SCANNING OPTIONAL
         polaris_application_name: "Merganser Duck Hardware"
-        polaris_project_name: "GitHub Bridge"
+        polaris_project_name: "Results Review Demo"
         coverity_build_command: "./mvnw clean install -DskipTests"
         coverity_clean_command: "./mvnw clean"
         polaris_test_sca_type:	"SCA-PACKAGE,SCA-SIGNATURE"
