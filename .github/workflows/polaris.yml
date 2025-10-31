@@ -29,8 +29,8 @@ jobs:
         polaris_assessment_types: "SCA,SAST"
         
         ### SCANNING OPTIONAL
-        polaris_application_name: "Merganser Duck Hardware"
-        polaris_project_name: "Results Review Demo"
+        polaris_application_name: "Evan Onboarding"
+        polaris_project_name: "Azure Boards Integration Test"
         coverity_build_command: "./mvnw clean install -DskipTests"
         coverity_clean_command: "./mvnw clean"
         polaris_test_sca_type:	"SCA-PACKAGE,SCA-SIGNATURE"
