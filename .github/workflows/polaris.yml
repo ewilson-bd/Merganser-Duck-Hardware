@@ -26,13 +26,13 @@ jobs:
         # Define the server URL, provides access token, and determines scan types
         polaris_server_url: ${{ vars.POLARIS_SERVER_URL }}
         polaris_access_token: ${{ secrets.POLARIS_ACCESS_TOKEN }}
-        polaris_assessment_types: "SCA,SAST"
+        polaris_assessment_types: "SAST"
         
         # Define the application and project name.
         polaris_application_name: ${{ vars.POLARIS_APPLICATION_NAME }}
-        polaris_project_name: ${{ vars.POLARIS_PROJECT_NAME }}
+        polaris_project_name: "Rapid Scan Test"
 
         # Provides the build and clean command for build capture, then selects SCA scan types
         coverity_build_command: "./mvnw clean install -DskipTests"
         coverity_clean_command: "./mvnw clean"
-        polaris_test_sca_type:	"SCA-PACKAGE,SCA-SIGNATURE"
+        #polaris_test_sca_type:	"SCA-PACKAGE,SCA-SIGNATURE"
