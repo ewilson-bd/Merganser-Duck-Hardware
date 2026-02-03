@@ -31,9 +31,9 @@ jobs:
         # Define the application and project name.
         polaris_application_name: "Evan Onboard"
         polaris_project_name: "Rapid Scan Test"
-        #polaris_test_sast_type: "SAST_RAPID"
+        polaris_test_sast_type: "SAST_RAPID"
 
         # Provides the build and clean command for build capture, then selects SCA scan types
-        coverity_build_command: "./mvnw clean install -DskipTests"
-        coverity_clean_command: "./mvnw clean"
+        #coverity_build_command: "./mvnw clean install -DskipTests"
+        #coverity_clean_command: "./mvnw clean"
         #polaris_test_sca_type:	"SCA-PACKAGE,SCA-SIGNATURE"
