@@ -18,3 +18,9 @@ steps:
     mvn spotless:apply
     mvn -N wrapper:wrapper
     ./mvnw spotless:apply
+
+- task: BlackDuckSecurityScan@2
+  inputs:
+    scanType: 'blackducksca'
+    blackduckScaUrl: '$(SCAURL)'
+    blackduckScaToken: '$(AccessToken)'
