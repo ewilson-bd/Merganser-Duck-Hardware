@@ -25,3 +25,4 @@ steps:
     blackduckScaUrl: '$(SCAURL)'
     blackduckScaToken: '$(AccessToken)'
     blackduckScaWaitForScan: false
+    detectArgs: '--detect.excluded.detector.types=GIT'
