@@ -25,4 +25,4 @@ steps:
     blackduckScaUrl: '$(SCAURL)'
     blackduckScaToken: '$(AccessToken)'
     blackduckScaWaitForScan: false
-    detectArgs: '--detect.excluded.detector.types=GIT'
+    detectArgs: '--detect.project.name=Merganser Duck Hardware --detect.project.version.name=main --detect.project.versionphase=DEVELOPMENT --detect.excluded.detector.types=GIT'
