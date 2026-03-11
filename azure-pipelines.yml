@@ -18,6 +18,7 @@ steps:
     mvn spotless:apply
     mvn -N wrapper:wrapper
     ./mvnw spotless:apply
+    ./mvnw clean install -DskipTests
 
 - task: BlackDuckSecurityScan@2
   inputs:
