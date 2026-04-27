@@ -25,4 +25,4 @@ steps:
     blackduckScaUrl: '$(SCAURL)'
     blackduckScaToken: '$(AccessToken)'
     blackduckScaWaitForScan: false
-    detectArgs: '--detect.project.name=Merganser --detect.project.version.name=main --detect.project.versionphase=DEVELOPMENT --detect.blackduck.signature.scanner.snippet.matching=SNIPPET_MATCHING --detect.excluded.detector.types=GIT'
+    detectArgs: '--detect.project.name=Merganser --detect.project.version.name=main --detect.project.versionphase=DEVELOPMENT --detect.blackduck.signature.scanner.snippet.matching=SNIPPET_MATCHING --detect.excluded.detector.types=GIT --detect.blackduck.correlated.scanning.enabled=true'
