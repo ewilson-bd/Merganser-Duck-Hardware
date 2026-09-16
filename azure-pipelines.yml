@@ -24,7 +24,8 @@ steps:
     scanType: 'blackducksca'
     blackduckScaUrl: '$(SCAURL)'
     blackduckScaToken: '$(AccessToken)'
+    detect.project.version.phase: ""
     blackduckScaWaitForScan: false
     #detectArgs: '--detect.project.name=Merganser --detect.project.version.name=main --detect.project.versionphase=DEVELOPMENT --detect.blackduck.signature.scanner.snippet.matching=SNIPPET_MATCHING --detect.excluded.detector.types=GIT --detect.blackduck.correlated.scanning.enabled=true'
-    detectArgs: '--detect.excluded.detector.types=GIT --detect.blackduck.correlated.scanning.enabled=true'
+    detectArgs: '--detect.excluded.detector.types=GIT --detect.blackduck.correlated.scanning.enabled=true --detect.project.name=Merganser --detect.project.version.name=main --detect.project.version.phase=RELEASED'
     blackduckScaReportsSarifCreate: true
