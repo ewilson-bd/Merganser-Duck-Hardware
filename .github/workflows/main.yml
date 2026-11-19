@@ -27,5 +27,9 @@ jobs:
       env:
         POLARIS_ACCESS_TOKEN: ${{ secrets.POLARIS_ACCESS_TOKEN }}
       run: |
-        ${{runner.temp}}/bridge-cli-bundle-linux64/bridge-cli --stage polaris polaris.project.name="Local-Bridge" polaris.application.name="Merganser Duck Hardware" polaris.assessment.types="SAST,SCA" polaris.serverUrl=https://poc.polaris.blackduck.com polaris.accessToken="$POLARIS_ACCESS_TOKEN"
+        ${{runner.temp}}/bridge-cli-bundle-linux64/bridge-cli --stage polaris polaris.project.name="Jama Project" 
+        polaris.application.name="Jama Application" polaris.assessment.types="SCA" 
+        polaris.accessToken="$POLARIS_ACCESS_TOKEN"
+        polaris.test.sca.type="SCA_BINARY" polaris.artifactToUpload="binaryFile.bin"
+        
 
