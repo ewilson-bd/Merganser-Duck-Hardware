@@ -22,8 +22,7 @@ jobs:
       run: mvn spotless:apply && mvn -N wrapper:wrapper && chmod +x ./mvnw
     - name: Install Bridge
       run: |
-        curl -fLsS -o bridge.zip https://repo.blackduck.com/bds-integrations-release/com/blackduck/integration/bridge/binaries/bridge-cli-bundle/latest/bridge-cli-bundle-linux64.zip 
-        && unzip -qo -d ${{runner.temp}} bridge.zip && rm -f bridge.zip
+        curl -fLsS -o bridge.zip https://repo.blackduck.com/bds-integrations-release/com/blackduck/integration/bridge/binaries/bridge-cli-bundle/latest/bridge-cli-bundle-linux64.zip && unzip -qo -d ${{runner.temp}} bridge.zip && rm -f bridge.zip
     - name: Run Bridge
       run: |
         ${{runner.temp}}/bridge-cli-bundle-linux64/bridge-cli --help
