@@ -24,4 +24,6 @@ jobs:
       run: |
         curl -fLsS -o bridge.zip https://repo.blackduck.com/bds-integrations-release/com/blackduck/integration/bridge/binaries/bridge-cli-bundle/latest/bridge-cli-bundle-linux64.zip 
         && unzip -qo -d ${{runner.temp}} bridge.zip && rm -f bridge.zip
-        ${{runner.temp}}/bridge-cli-bundle-linux64/bridge-cli --stage polaris \
+    - name: Run Bridge
+      run: |
+        ${{runner.temp}}/bridge-cli-bundle-linux64/bridge-cli --help
